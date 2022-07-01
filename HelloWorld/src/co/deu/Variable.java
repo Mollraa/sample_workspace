@@ -17,8 +17,11 @@ public class Variable {
 	    c1++; //정수는 기본적으로int연산, ++는 c1에 1을 더한다는의미 
 	    for (int i = 0; i <25; i++) {
 	    	System.out.println(c1++);
-		    
-//깃에서작업한내용입니다
+	    	
+	    	
+	    	
+	    	//이력변경추가 2022.07.01 12:55
+	    	System.out.println("이력변경추가. ");
 	    }
 	}
 }
