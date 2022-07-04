@@ -22,6 +22,8 @@ public class Example05 {
     	  System.out.println("두번째 값을 입력. ");
     	  int num2 = sn.nextInt();
     	  
+    	  int result = 0;
+    	  
     	  if(num1>num2) {
     		  result = num1 - num2;
     		  System.out.printf("입력값%d와 %d의 차이는 %d입니다.");
