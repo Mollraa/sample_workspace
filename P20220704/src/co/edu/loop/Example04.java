@@ -8,7 +8,7 @@ public class Example04 {
 		
 		// while 반복문의 종료조건.
 		// 1 ~ 100 임의의 수를 생성.
-		int temp = (int) (Math.random() * 100);
+		int temp = (int) (Math.random() * 100 + 1);
 		
 		while(true) {
 			System.out.println("임의의 값을 입력하세요");
