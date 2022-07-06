@@ -19,7 +19,7 @@ public class HelloWorld {
 	   myAge = 30;
 	   height = 165.2;
 			
-	   int result = myAge + yourAge;// 변수는 사뇬기위해 값이 할당되어있어야함
+	   int result = myAge + yourAge;// 변수는 사용하기위해 값이 할당되어있어야함
 	   double result1 = (double) myAge + yourAge;
 	   System.out.println(result);
 	   
