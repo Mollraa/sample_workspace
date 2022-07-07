@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 /*
  * 등록/ 조회/ 수정/ 삭제/ 리스트
+ * id:user1, passwd: 1212 => 로그인되었습니다!
+ *                        => 아이디, 비번을 확인하세요!
  */
 public class BoardApp {
 
@@ -12,8 +14,22 @@ public class BoardApp {
 		Board[] boards = new Board[100]; // 초기값 null
 		Scanner scn = new Scanner(System.in);
 
+		//로그인 처리기능.
+		//for(int i=1; i !=2;) {               //for반복문 써서 반복해도 됨
+		while(true) {
+			System.out.println("아이디를 입력하세요: ");
+			String id =scn.nextLine();
+			System.out.println("비밀번호를 입력하세요: ");
+			String pw = scn.nextLine();
+			
+				if(id.equals("user1") && pw.equals("1212")) {
+					System.out.println("로그인 되었습니다.");
+					break;
+				} 
+				System.out.println("로그인 실패했습니다.");
+			}
+		
 		boolean run = true;
-
 		while (run) {
 			System.out.println("1.등록 2.조회 3.수정 4.삭제 5.리스트 6.종료");
 			System.out.println("선택 >> ");
@@ -72,14 +88,14 @@ public class BoardApp {
 				System.out.println("삭제할 제목을 선택하세요.>");
 				String findTitle = scn.nextLine();
 				for (int i = 0; i < boards.length; i++) {
-					boards[i] = null;
-						
+					if (boards[i] != null && boards[i].getTitle().equals(findTitle)) {
+						boards[i] = null;
 					}
+						
 				}
 				System.out.println("정상적으로 삭제되었습니다.");
-				
-				
-				else if (selectNo == 5) {
+
+			}	else if (selectNo == 5) {
 				// 전체 리스트
 				for (int i = 0; i < boards.length; i++) {
 					if (boards[i] != null) {
@@ -94,7 +110,8 @@ public class BoardApp {
 				System.out.println("_프로그을 종료합니다_");
 				run = false;
 			}	
-				System.out.println("_프로그램 종료_");
+			System.out.println("_프로그램 종료_");
+		}
 	}
 }
 
