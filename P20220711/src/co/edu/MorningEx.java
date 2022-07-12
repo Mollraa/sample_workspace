@@ -16,7 +16,6 @@ public class MorningEx {
 				isExist = true; // 다돌았는데도 값이없으면 for구문 밖에 sysou~
 				break;
 			}
-
 		}
 		if (!isExist) {
 			System.out.println("찾는 과일이 없습니다.");

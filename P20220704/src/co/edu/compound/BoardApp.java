@@ -15,7 +15,7 @@ public class BoardApp {
 		Scanner scn = new Scanner(System.in);
 
 		//로그인 처리기능.
-		//for(int i=1; i !=2;) {               //for반복문 써서 반복해도 됨
+		//for(int i=1; i !=2;) {            //for반복문 써서 반복해도 됨
 		while(true) {
 			System.out.println("아이디를 입력하세요: ");
 			String id =scn.nextLine();
