@@ -1,15 +1,12 @@
 package com.edu;
-
+//MemberApp이 가진 app.execute를 구현하겠다를 구현하는곳
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class MemberApp implements MemberService {
 
-	List<Member> members = new ArrayList<Member>();
-	
-	Member[] Members = new Member[];
-	String membersNum;
+	List<Member> members = new ArrayList<Member>();  //맴버즈의 여러건의 데이터를 담아두겠ㅆ브니다~
 	Scanner scn = new Scanner(System.in);
 
 	public void execute() {
@@ -17,24 +14,22 @@ public class MemberApp implements MemberService {
 		// 1)도서반=>기본정보+도서반장,강의실이름
 		// 축구반=>기본정보+코치이름,락커룸이름
 		// 수영반=>기본정보+강사이름,수영등급
-
 		while (true) {
 			System.out.println("1.등록 2.수정 3.전체리스트 9.종료");
 			System.out.println("선택하세요 >> ");
 
-			int selectNo = 0;
-
-			if (selectNo == 1) {
-				add();
+			int selectNo = Integer.parseInt(scn.nextLine());
+			
+			if (selectNo == 1) {     //공동정보
+				System.out.println();
 			} else if (selectNo == 2) {
-				reset();
+				System.out.println();
 			} else if (selectNo == 3) {
-				list();
+				System.out.println();
 			} else if (selectNo == 9) {
 				System.out.println("종료합니다.");
 			}
 		}
-		System.out.println("프로그램 종료합니다.");
 
 	}
 
@@ -67,11 +62,10 @@ public class MemberApp implements MemberService {
 			System.out.println("도서관 강의실명");
 			String className = scn.nextLine();
 
-			Members[membersNum++] = new BookMember(memberId, memberName, className);
+		
 		}
 	}
-
-	@Override // implements MemberService~
+	@Override // implements MemberService를 재정의하겠씁니다~
 	public void addMember(Member member) {
 		members.add(member);
 

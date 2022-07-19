@@ -1,5 +1,5 @@
 package com.edu;
-
+//필드
 public class Member {
 	// 회원아이디, 회원명, 연락처 정보.
 

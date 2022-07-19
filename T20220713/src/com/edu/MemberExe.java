@@ -4,6 +4,6 @@ package com.edu;
 public class MemberExe {
 	public static void main(String[] args) {
 		MemberApp app = new MemberApp();
-		app.execute();
+		app.execute(); //MemberApp이 가진 app.execute를 구현하겠다
 	}
 }
