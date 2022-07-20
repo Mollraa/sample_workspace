@@ -5,6 +5,7 @@ public class SoccerMember {
 	// 락커룸의 이름.(A, B, C, D)
 	
 	// 정보출력시 => 코치이름: 홍길동, 락커룸: A 
+	
 	@Override
 	public String toString() {
 		
