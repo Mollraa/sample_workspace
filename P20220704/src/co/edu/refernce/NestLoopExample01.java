@@ -11,7 +11,7 @@ public class NestLoopExample01 {
 		}
 
 		for (int j = 2; j <= 9; j++) {
-			for (int i = 1; i <= 9; i++) { // 반복문에 ; 안함, 결과값 한줄이면 {} 생략가능
+			for (int i = 1; i <= 9; i++) {  // 반복문에 ; 안함, 결과값 한줄이면 {} 생략가능
 //				System.out.printf("%d * %d = %d \n", j, i, (j * i));
 			}
 //			System.out.println( );
