@@ -13,7 +13,7 @@ public class ArrayExample04 {
 		banAry[1][2] = 90;
 		
 		int sum = 0; //A반 평균
-		System.out.println(banAry[0][0]); // 아라랄ㄹㄹ알라라알라랄랄앙ㄹㄹ라라라아랄라랄ㄹ
+		System.out.println(banAry[0][0]); 
 		for (int i=0; i < banAry[0].length; i++) {
 			sum += banAry[0][i];
 		} 
