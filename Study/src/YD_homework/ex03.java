@@ -38,12 +38,13 @@ public class ex03 {
 // 1900년은 100의 배수이고 400의 배수는 아니기 때문에 윤년이 아닙니다.
 // HiNT : 이중 IF문 사용
 // 문제출처, 백준(https://www.acmicpc.net/) 2753번 문제
+		
 
 // 문제3) switch문을 이용하여 가위, 바위, 보 중 하나가 주어졌을 때 
 // 사용자 어떤 값을 가져야 이길 수 있는 지를 출력하도록 구현하세요.
 // 예를 들어, 가위가 주어졌을 때 "이기기 위해선 바위를 내야합니다." 라고 출력하도록 하세요.
 // 한 단어를 입력받을 경우 Scanner객체의 next() 함수를 사용하면 됩니다.
-		boolean run = true;
+		boolean run = true;  //while문 변수선언
 		
 		while (run) { //반복문으로 run 실행 
 			System.out.println("가위 바위 보!"); 

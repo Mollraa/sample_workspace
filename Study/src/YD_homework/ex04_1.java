@@ -27,18 +27,27 @@ public class ex04_1 {
 				System.out.println("학생수를 입력해주세요: "); // 학생수 입력받는 실행문
 				studentNum = scn.nextInt(); // 학생수는 정수로 입력받겠다.
 				scores = new int[studentNum]; // 점수는 학생수에 따라 배열을 받겠다.
-				break; // case1 조건완료후 멈추겠다.
+				//break; // case1 조건완료후 멈추겠다.
 			case 2:
 				System.out.println("점수입력 페이지 입니다."); //2번 선택시 보여지는 실행문
 				for (int i = 0; i < scores.length; i++) {		//학생수는 0부터 입력값 까지 받겠다.
+<<<<<<< HEAD
 					System.out.printf("scores[%d] : " , i); // 점수 실행문 //socres[i] 초기값 0
 					//print로하니 까 오류남 
+=======
+					System.out.printf("점수: %d",scores[i]); // 점수 실행문
+>>>>>>> branch 'master' of https://github.com/BeakJinhee/sample_workspace.git
 					scores[i] = scn.nextInt(); // 점수는 입력값에 배열할당
 				}
-				break; //2번종료
+				//break; //2번종료
 			case 3:
+<<<<<<< HEAD
 				System.out.println("점수리스트 페이지 입니다."); //3번 선책시 실행문
 				for (int i = 0; i < studentNum; i++) {	//i는 0부터 하나씩 studentNum값으로 커진다. 
+=======
+				System.out.println("점수리스트 페이지 입니다.\n"); //3번 선책시 실행문
+				for (int i = 0; i < scores.length; i++) {	//i는 0부터 하나씩 studentNum값으로 커진다. 
+>>>>>>> branch 'master' of https://github.com/BeakJinhee/sample_workspace.git
 					System.out.println("[" + i + "]번 학생: " + scores[i]); // case2에서 입력한 점수배열 입력 값을 보여쥼
 				}
 				break; // 3번 종료
