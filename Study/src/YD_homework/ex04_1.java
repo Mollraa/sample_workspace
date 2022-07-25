@@ -23,26 +23,27 @@ public class ex04_1 {
 
 			switch (selectNo) { //selectNo라는 변수가 어떤 값을 가지느냐에 따라 해당 실행문 결정. (switch 변수의 값에 따라 실행)
 			case 1:
-				System.out.println("학생수입력 페이지입니다.\n"); //1번 선택시 보여지는 실행문
-				System.out.print("학생수를 입력해주세요: "); // 학생수 입력받는 실행문
+				System.out.println("학생수입력 페이지입니다."); //1번 선택시 보여지는 실행문
+				System.out.println("학생수를 입력해주세요: "); // 학생수 입력받는 실행문
 				studentNum = scn.nextInt(); // 학생수는 정수로 입력받겠다.
 				scores = new int[studentNum]; // 점수는 학생수에 따라 배열을 받겠다.
 				break; // case1 조건완료후 멈추겠다.
 			case 2:
-				System.out.println("점수입력 페이지 입니다.\n"); //2번 선택시 보여지는 실행문
+				System.out.println("점수입력 페이지 입니다."); //2번 선택시 보여지는 실행문
 				for (int i = 0; i < scores.length; i++) {		//학생수는 0부터 입력값 까지 받겠다.
-					System.out.print("[" + i + "]번 학생 점수: " + scores[i]); // 점수 실행문
+					System.out.printf("scores[%d] : " , i); // 점수 실행문 //socres[i] 초기값 0
+					//print로하니 까 오류남 
 					scores[i] = scn.nextInt(); // 점수는 입력값에 배열할당
 				}
 				break; //2번종료
 			case 3:
-				System.out.println("점수리스트 페이지 입니다.\n"); //3번 선책시 실행문
+				System.out.println("점수리스트 페이지 입니다."); //3번 선책시 실행문
 				for (int i = 0; i < studentNum; i++) {	//i는 0부터 하나씩 studentNum값으로 커진다. 
 					System.out.println("[" + i + "]번 학생: " + scores[i]); // case2에서 입력한 점수배열 입력 값을 보여쥼
 				}
 				break; // 3번 종료
 			case 4:
-				System.out.println("점수분석 페이지 입니다.\n"); //4번선책시 실행문
+				System.out.println("점수분석 페이지 입니다."); //4번선책시 실행문
 				int max = 0; //정수 최고값 선언, 초기화 
 				int sum = 0; //정수 합계 선언
 				double avg = 0.0; //더블(실수타입) 평균값 선언 

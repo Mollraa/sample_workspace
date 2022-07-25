@@ -6,8 +6,8 @@ public class SoccerMember {
 	
 	// 정보출력시 => 코치이름: 홍길동, 락커룸: A 
 	
-	@Override
-	public String toString() {
+	//@Override
+	//public String toString() {
 		
 	}
-}
+
