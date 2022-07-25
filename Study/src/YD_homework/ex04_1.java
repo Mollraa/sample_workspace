@@ -31,7 +31,7 @@ public class ex04_1 {
 			case 2:
 				System.out.println("점수입력 페이지 입니다.\n"); //2번 선택시 보여지는 실행문
 				for (int i = 0; i < scores.length; i++) {		//학생수는 0부터 입력값 까지 받겠다.
-					System.out.print("[" + i + "]번 학생 점수: " + scores[i]); // 점수 실행문
+					System.out.printf("점수: %d",scores[i]); // 점수 실행문
 					scores[i] = scn.nextInt(); // 점수는 입력값에 배열할당
 				}
 				//break; //2번종료
