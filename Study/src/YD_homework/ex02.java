@@ -49,8 +49,8 @@ public class ex02 {
 
 		// 문제4) 변수 val의 값이 양수일 경우엔 변수 값을,
 		// 아닐 경우엔 0을 담는 변수를 선언하세요. (단, 삼항연산자를 사용)
-		int val = 1; // 변수1을 선언
-		int intResult = (val > 0) ? val : 0; // 삼항연산자로 intresult를 (조건문0보다클경우) 참:거짓;
+		int val2 = 1; // 변수1을 선언
+		int intResult = (val2 > 0) ? val2 : 0; // 삼항연산자로 intresult를 (조건문0보다클경우) 참:거짓;
 		System.out.println(intResult); // 결과값 도출
 
 		// Scanner scn = new Scanner(System.in); //입력값을 받아서 한다면

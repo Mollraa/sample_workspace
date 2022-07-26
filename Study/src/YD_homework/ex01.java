@@ -63,19 +63,19 @@ public class ex01 {
 		/*
 		 * 4-1) result1 = a + c + d; System.out.println(result1);
 		 */
-		long result1 = a + c + d;
-		System.out.println("result1: " + result1 + "\n");
+		long result11 = a + c + d;
+		System.out.println("result11: " + result11 + "\n");
 		/*
 		 * 4-2 ) result2 = a + b + c; System.out.println(result2);
 		 */
-		int result2 = a + b + c;
-		System.out.println("result2: " + result2 + "\n");
+		int result22 = a + b + c;
+		System.out.println("result22: " + result22 + "\n");
 		/*
 		 * 4-3 ) double e = 45.31; result3 = c + d + e; System.out.println(result3);
 		 */
 		double e = 45.31;
-		double result3 = c + d + e;
-		System.out.println("result3: " + result3);
+		double result33 = c + d + e;
+		System.out.println("result33: " + result33);
 
 		/*
 		 * 문제5) 아래와 같이 변수가 초기화되어있을 경우 다음과 같이 명시된데로 출력하세요. 출력예시) A278번지10.0

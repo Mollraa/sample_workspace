@@ -3,7 +3,6 @@ package YD_homework;
 import java.util.Scanner;
 
 public class ex05 {
-	public static void main(String[] args) {
 		// 문제1) 다음은 키보드로부터 상품 수와 상품 가격을 입력받아서
 		// 최고 가격을 가지는 제품과 해당 제품을 제외한 제품들의 
 		//총 합을 구하는 프로그램을 작성하세요.
@@ -14,43 +13,49 @@ public class ex05 {
 		//	출력예시, "상품명 : 가격"
 		// 4) 분석기능은 최고 가격을 가지는 제품과 해당 제품을 제외한 제품들의 총합을 구합니다.
 		// 5) 종료 시에는 프로그램을 종료한다고 메세지를 출력하도록 구현하세요.
-		Scanner scn = new Scanner(System.in); //입력값 받겠습니다
-		boolean pro = true; //while문 실행변수
-		int num = 0; //상품수받을때 변수선언
-		int[] pri = null; //상품가격 저장을 위한 배열
-		String[] name = null; //상품값입력을 위한 배열
-		int max = 0;
-		int sum = 0;
-		
-		while(pro) {
-			System.out.println("1.상품 수 | 2.상품 및 가격입력 | 3.제품별 가격 | 4.분석 | 5.종료");
-			System.out.println("---------------------------------------------------------");
-			System.out.println("선택 > ");
-			int selectNo = Integer.parseInt(scn.nextLine()); //목록에서 받을 번호값
+			private String name; //상품수
+			private int price; //가격
+			private int numStock; //재고
+			private int sold; //수량
 			
-			switch(selectNo) {
-			case 1:
-				System.out.println("상품 수 입력해주세요: ");
-				num = scn.nextInt();
-				pri = new int[num];
-
-break;
-			case 2:
-				System.out.println("상품을 입력해 주세요:");
-				for(int i=0 i<)
-			case 3:
-				break;
-			
-			case 4:
-				break;
-				
-			case 5:
-				System.out.println("프로그램 종료합니다.");
-				break;
-				
+			//생성자 
+			public ex05() {}
+			public ex05(String name, int price, int numStock, int sold){
+				this.name = name;
+				this.price = price;
+				this.numStock = numStock;
+				this.sold = sold;
 			}
-		}
-		
-	}
 
+			public String getName() {
+				return name;
+			}
+
+			public void setName(String name) {
+				this.name = name;
+			}
+
+			public int getPrice() {
+				return price;
+			}
+
+			public void setPrice(int price) {
+				this.price = price;
+			}
+
+			public int getNumStock() {
+				return numStock;
+			}
+
+			public void setNumStock(int numStock) {
+				this.numStock = numStock;
+			}
+
+			public int getSold() {
+				return sold;
+			}
+
+			public void setSold(int sold) {
+				this.sold = sold;
+			}
 }
