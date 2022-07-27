@@ -1,0 +1,45 @@
+package YD_homework;
+
+public class ex05Met {
+	// 문제1) 다음은 키보드로부터 상품 수와 상품 가격을 입력받아서
+			// 최고 가격을 가지는 제품과 해당 제품을 제외한 제품들의 
+			//총 합을 구하는 프로그램을 작성하세요.
+			// 1) 메뉴는 다음과 같이 구성하세요.
+			// 1.상품 수 | 2.상품 및 가격입력 | 3.제품별 가격 | 4.분석 | 5.종료
+			// 2) 입력한 상품 수만큼 상품명과 해당 가격을 입력받을 수 있도록 구현하세요.
+			// 3) 제품별 가격을 출력하세요.
+			//	출력예시, "상품명 : 가격"
+			// 4) 분석기능은 최고 가격을 가지는 제품과 해당 제품을 제외한 제품들의 총합을 구합니다.
+			// 5) 종료 시에는 프로그램을 종료한다고 메세지를 출력하도록 구현하세요.
+				private String name; //상품수
+				private int price; //가격
+				
+				//생성자 
+				public ex05Met() {}
+				public ex05Met(String name, int price){
+					this.name = name;
+					this.price = price;
+				
+				}
+
+				public String getName() {
+					return name;
+				}
+
+				public void setName(String name) {
+					this.name = name;
+				}
+
+				public int getPrice() {
+					return price;
+				}
+
+				public void setPrice(int price) {
+					this.price = price;
+				}
+				@Override
+				public String toString() {
+					return "상품리스트[ 상품명: " + name + " | 상품가격: " + price + "원 ]" ;
+				}
+
+}
