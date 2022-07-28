@@ -24,10 +24,10 @@ public class Employee {
 	public int getSal() {
 		return sal;
 	}
-	public void getInformation() { //이 형식으로 보여주겠다
-		System.out.println("이름 : " + name + " , 연봉: " + sal);
+	public void getInformation() { //이 형식으로 보여주겠다 
+		System.out.print("이름 : " + name + " , 연봉: " + sal);
 	}
-	public void prn() {
+	public void prn() { //prn = 수퍼클래스
 		System.out.print("수퍼클래스");
 	}
 }

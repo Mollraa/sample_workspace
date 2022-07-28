@@ -10,9 +10,25 @@ public class EmpDept extends Employee {
 	//(2) public void print() : "수퍼클래스\n서브클래스"란 문구를 출력하는 기능
 	private String dept;
 	
+	public EmpDept() {}
 	public EmpDept(String name, int sal, String dept) {
 		super(name, sal);
 		this.dept = dept;
+	}
+
+//	@Override
+//	public void getInformation() {
+//		System.out.println("이름 : " + getName() + " , 연봉: " + getSal() + ", 부서: " + this.dept);
+//	}
+	@Override
+	public void getInformation() {
+		super.getInformation();
+		System.out.print(", 부서: " + dept);
+	}
+
+	@Override
+	public void prn() {
+		System.out.print("수퍼클래스\n서브클래스");
 	}
 	
 }
