@@ -15,7 +15,7 @@ public class HumanApp {
 		hum.getInformation(); //출력문
 		System.out.println(); //가독성을위해 
 		hum = new ObesityInfo("박돌이", 168, 90); //비만도
-		((ObesityInfo)hum).getObesity();
+		((ObesityInfo)hum).getObesity(); // 형변환 해주고.Obe값을 받아온다.
 		hum.getInformation();
 		
 	}

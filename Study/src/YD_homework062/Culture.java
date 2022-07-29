@@ -14,6 +14,7 @@ public class Culture {
 	private String actNum;
 	private String audienceNum;
 	private int score;
+	private String grade;
 	
 	public Culture() {}
 	public Culture(String title, String directNum, String actNum) {
@@ -22,12 +23,13 @@ public class Culture {
 		this.actNum = actNum;
 	}
 	public void setTotalScore(int score) {
-		if(score )
+		
 	}
 	public String getGrade() {
-		System.out.println("평점: " + );
-	}
+		System.out.println("평점: " + grade);
 	
+	}
+	public abstract void getInformation();
 	
 	
 }
