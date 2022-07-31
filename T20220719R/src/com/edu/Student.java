@@ -6,8 +6,7 @@ public class Student {
 	private String studName;
 	private int score;
 
-	public Student() {
-	}
+	public Student() {}
 
 	public Student(String studNo, String studName, int score) {
 		super();
