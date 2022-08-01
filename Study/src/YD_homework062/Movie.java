@@ -8,6 +8,7 @@ public class Movie extends Culture {
 //		: 제목, 참여감독 수, 참여배우 수, 관객수, 총점, 평점을 출력하는 기능
 	private String gNum="영화";
 	
+	public Movie() {super();}
 	public Movie(String title, int dNum, int actNum, int audNum, int score, String gNum) {
 		super(title, dNum, actNum, audNum, score);
 		this.gNum = gNum;

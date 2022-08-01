@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class MemberApp implements MemberService {
 
-	List<Member> members = new ArrayList<Member>();  //맴버즈의 여러건의 데이터를 담아두겠ㅆ브니다~
+	List<Member> members = new ArrayList<Member>();  //맴버즈의 여러건의 데이터를 담아두겠습니다~
 	Scanner scn = new Scanner(System.in);
 
 	public void execute() {

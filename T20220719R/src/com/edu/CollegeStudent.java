@@ -5,6 +5,11 @@ public class CollegeStudent extends Student {
 	private String prof;
 	private String major;
 
+	// 기본생성자
+	public CollegeStudent() {
+		super();
+	}
+
 	// 생성자.
 	CollegeStudent(String studNo, String studName, int score, String prof, String major) {
 		super(studNo, studName, score);
@@ -12,10 +17,6 @@ public class CollegeStudent extends Student {
 		this.major = major;
 
 	}
-
-	// 기본생성자
-	public CollegeStudent() {}
-
 
 	public String getProf() {
 		return prof;
@@ -32,10 +33,11 @@ public class CollegeStudent extends Student {
 	public void setMajor(String major) {
 		this.major = major;
 	}
+
 	// toString() //객체 정보를 문자열로 반환
 	public String toString() {
 		return " 대학생 [studNo=" + getStudNo() + ", studName=" + getStudName() + ", score=" + getScore() + ", prof="
 				+ prof + ", major" + major + "]";
 	}
-	
+
 }

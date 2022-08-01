@@ -15,6 +15,8 @@ public abstract class Culture { //추상클래스 = 추상메소드 , 추상메�
 	private int audNum = 0;
 	private int score = 0;
 	
+	public Culture() {super();}
+	
 	public Culture(String title, int dNum, int actNum, int audNum, int score) {
 		super();
 		this.title = title;
