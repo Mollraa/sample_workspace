@@ -1,6 +1,6 @@
 package com.edu;
 
-public class SoccerMember {
+public class YogaMember {
 	// 축구반의 코치이름.
 	// 락커룸의 이름.(A, B, C, D)
 	

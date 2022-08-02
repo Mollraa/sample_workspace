@@ -87,7 +87,7 @@ public class StudentApp {
 					System.out.println("수정되었습니다.");
 			} else if (selectNum ==3) {
 				System.out.println("--------수정리스트--------");
-				StudentList();
+
 			}
 
 		}
